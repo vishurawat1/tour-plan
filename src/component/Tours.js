@@ -4,11 +4,11 @@ import Card from "./Card";
 
 function Tours({tours, removeTour}) {
     return(
-        <div >
+        <div className="container">
             <div >
-                <h2>Vishu Rawat</h2>
+                <h2 className="title">Vishu Rawat</h2>
             </div>
-            <div className="flex flex-wrap">
+            <div className="cards">
                 {tours.map((tour) => {
                     return(
                         <Card key = {tour.id} {...tour} removeTour = {removeTour}/>
